@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'capture_photo_screen.dart';
+import 'capture_photo_screen_clean.dart';
 
 class ScanningScreen extends StatelessWidget {
   const ScanningScreen({super.key});
@@ -64,12 +64,12 @@ class ScanningScreen extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 16),
-                        ElevatedButton(
+                            ElevatedButton(
                           onPressed: () {
                             Navigator.of(context).pop(); // close dialog
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (_) => const CapturePhotoScreen()),
+                              MaterialPageRoute(builder: (_) => const CapturePhotoScreenClean()),
                             );
                           },
                           style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),

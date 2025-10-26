@@ -14,7 +14,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _handleLogin(BuildContext context) {
     // Temporary login bypass
-    if (_usernameController.text == 'admin' && _passwordController.text == '123456') {
+    if (_usernameController.text == 'admin' &&
+        _passwordController.text == '123456') {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (_) => const HomeScreen()),
@@ -66,11 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 16),
-                      Image.asset(
-                        'assets/logo.png',
-                        width: 120,
-                        height: 120,
-                      ),
+                      Image.asset('assets/logo.png', width: 160, height: 160),
                     ],
                   ),
                 ),

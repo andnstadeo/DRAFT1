@@ -9,12 +9,24 @@ class TopPillHeader extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 22),
-      decoration: const BoxDecoration(
-        color: Colors.blue,
-        borderRadius: BorderRadius.only(
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Colors.blue, Color(0xFF2196F3)],
+        ),
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(26),
           bottomRight: Radius.circular(26),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.blue.withOpacity(0.2),
+            spreadRadius: 1,
+            blurRadius: 6,
+            offset: const Offset(0, 3),
+          ),
+        ],
       ),
       child: SafeArea(
         bottom: false,
