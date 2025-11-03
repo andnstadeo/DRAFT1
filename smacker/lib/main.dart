@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/input_details_screen.dart';
 import 'screens/scan_screen.dart';
 import 'screens/live_screen.dart';
 import 'screens/signup/personal_info_screen.dart';
@@ -26,6 +27,7 @@ class MainApp extends StatelessWidget {
         '/welcome': (context) => const WelcomeScreen(),
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
+        '/input_details': (context) => const InputDetailsScreen(),
         '/scan': (context) => const ScanScreen(),
         '/live': (context) => const LiveScreen(),
         '/signup_personal': (context) => const PersonalInfoScreen(),

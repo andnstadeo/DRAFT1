@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'scan_screen.dart';
+import 'input_details_screen.dart';
 import 'settings_screen.dart';
 import 'profile_screen.dart';
 import 'alerts_screen.dart';
@@ -219,7 +219,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void _onScanPressed() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (_) => const ScanScreen()),
+      MaterialPageRoute(builder: (_) => const InputDetailsScreen()),
     );
   }
 
