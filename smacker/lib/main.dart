@@ -3,8 +3,7 @@ import 'screens/welcome_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/scan_screen.dart';
-import 'screens/scanning_screen.dart';
-import 'screens/capture_photo_screen_clean.dart';
+import 'screens/live_screen.dart';
 import 'screens/signup/personal_info_screen.dart';
 import 'screens/signup/verification_screen.dart';
 void main() {
@@ -28,10 +27,9 @@ class MainApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
         '/scan': (context) => const ScanScreen(),
-        '/scanning': (context) => const ScanningScreen(),
+        '/live': (context) => const LiveScreen(),
         '/signup_personal': (context) => const PersonalInfoScreen(),
         '/signup_verification': (context) => const VerificationScreen(),
-  '/capture': (context) => const CapturePhotoScreenClean(),
       },
     );
   }
